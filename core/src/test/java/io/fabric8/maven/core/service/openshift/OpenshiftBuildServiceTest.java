@@ -296,6 +296,10 @@ public class OpenshiftBuildServiceTest {
                 .andEmit(new WatchEvent(build, "MODIFIED"))
                 .done().always();
 
+        mockServer.expect().withPath("/api/v1/namespaces/test/pods/" + projectName + "-build/log?pretty=false&follow=true")
+                .andUpgradeToWebSocket().open()
+                .waitFor(1000).andEmit("FETCHING LOGS").done().once();
+
         return collector;
     }
 
