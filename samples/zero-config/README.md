@@ -1,10 +1,10 @@
-###About Zero-Config Sample
+### About Zero-Config Sample
 
 This is a sample project to use fabric8-maven-plugin without doing any configuration.
 
-###Steps to use Zero-Config Sample
+### Steps to use Zero-Config Sample
 
-Before using Zero-Config Sample, make sure that you have followed basic steps.
+Before using Zero-Config Sample, make sure that you have followed basic [steps](../).
 
 First you need to move to samples/zero-config folder
 ```
